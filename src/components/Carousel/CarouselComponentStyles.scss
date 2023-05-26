@@ -1,27 +1,49 @@
-.carousel {
-  //position: relative;
-  width:  100%;
-  height: 100%;
-  //display: flex;
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  z-index: 2;
+  transition: background-color 0.3s;
 }
 
-.carousel-slides {
-  list-style: none;
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button:active {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+.carousel-container {
+  position: relative;
   display: flex;
-  width:500px;
-  height: 400px;
-  padding: 0;
-  margin: 0;
+  align-items: center;
 }
 
-.carousel-slides li {
-  flex: 0 0 100%;
+.carousel-button.previous {
+  left: 10px;
+}
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  position: absolute; /* New property */
 }
+

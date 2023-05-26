@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage":"https://Robert-W-Ward.github.io/portfolio",
+  "homepage": "https://Robert-W-Ward.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -21,12 +21,13 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "react-spring": "^9.7.1",
     "sass": "^1.62.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

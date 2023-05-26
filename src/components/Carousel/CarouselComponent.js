@@ -1,39 +1,44 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { useTransition, animated, config } from 'react-spring';
 import "./CarouselComponentStyles.scss";
 
 const Carousel = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
-
-  const goToPrevSlide = () => {
-    const index = (currentIndex - 1 + slides.length) % slides.length;
-    setCurrentIndex(index);
-  };
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   const goToNextSlide = () => {
-    const index = (currentIndex + 1) % slides.length;
-    setCurrentIndex(index);
+    setDirection(1);
+    setActiveSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
 
+  const goToPreviousSlide = () => {
+    setDirection(-1);
+    setActiveSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
+  };
+
+  const transitions = useTransition(activeSlide, {
+    from: { opacity: 0, transform: `translate3d(${direction * 100}%,0,0)` },
+    enter: { opacity: 1, transform: 'translate3d(0px,0,0)' },
+    leave: { opacity: 0, transform: `translate3d(${direction * 0}%,0,0)` },
+    config: { tension: 280, friction: 120 },
+    trail: 200  // Delay in ms
+  });
+  
+
   return (
-    <div className="carousel">
-      <button className="carousel-prev" onClick={goToPrevSlide}>
-        Prev
+    <div className="carousel-container">
+      <button className="carousel-button previous" onClick={goToPreviousSlide}>
+        Previous
       </button>
-      <ul className="carousel-slides">
-        {slides.map((slide, index) => (
-          <li
-            key={index}
-            className={index === currentIndex ? "active" : ""}
-          >
-            {slide}
-          </li>
-        ))}
-      </ul>
-      <button className="carousel-next" onClick={goToNextSlide}>
+      {transitions((styles, item) => 
+        <animated.div 
+          style={styles} 
+          className="carousel-slide"
+        >
+          {slides[item]}
+        </animated.div>
+      )}
+      <button className="carousel-button next" onClick={goToNextSlide}>
         Next
       </button>
     </div>
