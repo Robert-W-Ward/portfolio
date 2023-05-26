@@ -1,34 +1,35 @@
 import React from "react";
 import "./ProjectsComponentStyles.scss";
 import ProjectCard from "../../components/ProjectCard/ProjectCardComponent.js";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import DevilImage from '../../assets/images/devilf.png'
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from "../../components/Carousel/CarouselComponent.js";
+
+
 
 const Project = () => {
+  const slides = [
+    <ProjectCard
+      title="Project 1"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      imageUrl={DevilImage}
+    />,
+    <ProjectCard
+      title="Project 2"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      imageUrl=""
+    />,
+    <ProjectCard
+      title="Project 3"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      imageUrl='https://placehold.co/512x512'
+    />
+  ]
   return (
     <section className="projects-section">
       <div className="projects-container">
         <h2 className="section-title">Projects</h2>
-        <Carousel
-          showStatus={false}
-          showThumbs={true}
-          emulateTouch={true}
-          infiniteLoop={true}
-          selectedItem={0} // Change the value to set the default focused project
-        >
-          <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          />
-          <ProjectCard
-            title="Project 2"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          />
-          <ProjectCard
-            title="Project 3"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          />
-        </Carousel>
+        <Carousel slides={slides}/>
       </div>
     </section>
   );
