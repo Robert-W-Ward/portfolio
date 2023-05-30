@@ -2,7 +2,6 @@ import React from "react";
 import "./ProjectsComponentStyles.scss";
 import ProjectCard from "../../components/ProjectCard/ProjectCardComponent.js";
 import DevilImage from '../../assets/images/devilf.png'
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "../../components/Carousel/CarouselComponent.js";
 
 

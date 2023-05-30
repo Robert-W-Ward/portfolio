@@ -17,11 +17,9 @@ const Carousel = ({ slides }) => {
   };
 
   const transitions = useTransition(activeSlide, {
-    from: { opacity: 0, transform: `translate3d(${direction * 100}%,0,0)` },
+    from: { opacity: 1, transform: `translate3d(${direction * -100}%,0,0)` },
     enter: { opacity: 1, transform: 'translate3d(0px,0,0)' },
-    leave: { opacity: 0, transform: `translate3d(${direction * 0}%,0,0)` },
-    config: { tension: 280, friction: 120 },
-    trail: 200  // Delay in ms
+    to: { opacity: 1, transform: `translate3d(${direction * 100}%,0,0)` },
   });
   
 
