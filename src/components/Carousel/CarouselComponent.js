@@ -17,9 +17,9 @@ const Carousel = ({ slides }) => {
   };
 
   const transitions = useTransition(activeSlide, {
-    from: { opacity: 1, transform: `translate3d(${direction * -100}%,0,0)` },
+    from: { opacity: 1, transform: `translate3d(${direction * 100}%,0,0)` },
     enter: { opacity: 1, transform: 'translate3d(0px,0,0)' },
-    to: { opacity: 1, transform: `translate3d(${direction * 100}%,0,0)` },
+    to: { opacity: 1, transform: `translate3d(${direction * -100}%,0,0)` },
   });
   
 
