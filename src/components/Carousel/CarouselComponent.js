@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useTransition, animated, config } from 'react-spring';
+import {ReactComponent as ArrowIcon} from '../../assets/images/arrow.svg'
+import { useTransition, animated } from 'react-spring';
 import "./CarouselComponentStyles.scss";
 
 const Carousel = ({ slides }) => {
@@ -26,7 +27,7 @@ const Carousel = ({ slides }) => {
   return (
     <div className="carousel-container">
       <button className="carousel-button previous" onClick={goToPreviousSlide}>
-        Previous
+       <ArrowIcon className='arrow-icon previous'/>
       </button>
       {transitions((styles, item) => 
         <animated.div 
@@ -37,7 +38,7 @@ const Carousel = ({ slides }) => {
         </animated.div>
       )}
       <button className="carousel-button next" onClick={goToNextSlide}>
-        Next
+      <ArrowIcon className='arrow-icon next'/>
       </button>
     </div>
   );

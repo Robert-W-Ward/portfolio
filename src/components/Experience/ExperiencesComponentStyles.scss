@@ -1,20 +1,18 @@
-.experiences-section{
-    background-color: #f2f2f2;
-    padding: 4rem 0;
+.experiences-section {
+  background-color: #f9f9f9;
+  padding: 8rem 0;
 }
-.experiences-container {
-    max-width: 800px;
-    margin: 0 auto;
-    height: fit-content;
-    text-align: center;
-  }
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  .timeline{
-    display: flex;
-    justify-content: center;
 
-  }
+.experiences-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.experiences-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px; 
+  text-align: center;
+}

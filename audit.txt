@@ -411,7 +411,8 @@ Arbitrary File Creation/Overwrite via insufficient symlink protection due to dir
 Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links - https://github.com/advisories/GHSA-9r2w-394v-53qc
 Arbitrary File Creation/Overwrite on Windows via insufficient relative path sanitization - https://github.com/advisories/GHSA-5955-9wpr-37jh
 Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links - https://github.com/advisories/GHSA-qq89-hq3f-393p
-fix available via `npm audit fix`
+fix available via `npm audit fix --force`
+Will install create-react-app@1.2.1, which is a breaking change
 node_modules/tar
   tar-pack  *
   Depends on vulnerable versions of tar

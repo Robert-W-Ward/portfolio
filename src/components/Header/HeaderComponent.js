@@ -1,11 +1,14 @@
 import React from "react";
+import Logo from '../../assets/images/robert_ina_box.png'
 import "./HeaderComponentStyles.scss";
 
 const Header = () => {
   return (
     <header className="header">
-      <nav className="navbar">
-        <div className="logo"></div>
+      <nav className="nav-bar">
+        <div className="logo">
+          <img classname='logo-image' src={Logo}/>
+        </div>
         <ul className="nav-links">
           <li className="nav-item">
             <a href="#about">About</a>

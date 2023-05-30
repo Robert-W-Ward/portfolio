@@ -14,7 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
   transition: background-color 0.3s;
 }
 
@@ -30,15 +29,17 @@
   right: 10px;
 }
 .carousel-container {
-  position: relative;
-  display: flex;
+  display: block;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .carousel-button.previous {
   left: 10px;
 }
+.arrow-icon.previous{
+  transform: scaleX(-1);
+}
+
 .carousel-slide {
   display: flex;
   justify-content: center;
