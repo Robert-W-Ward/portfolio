@@ -1,0 +1,41 @@
+.popup-tray {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+  transform: translateY(100%);
+  justify-content: center;
+  align-items: flex-end;
+  width: auto;
+  height: 80px;
+  z-index: 9999;
+}
+
+.popup-tray.open {
+  transform: translateY(0);
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons{
+  margin-right: 0;
+  margin-top: 10px;
+}
+.icon-container a {
+  display: block;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center icons horizontally */
+}
+.popup-arrow-icon {
+  width: 20px; 
+  height: 20px; 
+  align-self: auto;
+  transform: rotate(-90deg); 
+}
