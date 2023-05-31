@@ -1,9 +1,6 @@
 
 .experience-card {
   background-color: #fff;
-  padding: 10%;
-  display:grid;
-  flex-direction: column;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   width: 220px;
   height: auto;
@@ -16,10 +13,9 @@
 }
 
 .card-top {
-  flex: 1;
-  display: block;
+  display: inline;
   text-align: center;
 }
-.card-top p{
-  font-size: 10pt;
+.card-bottom{
+  display: inline;
 }

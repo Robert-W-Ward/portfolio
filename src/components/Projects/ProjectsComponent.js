@@ -25,7 +25,7 @@ const Project = () => {
     />
   ]
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <div className="projects-container">
         <h2 className="section-title">Projects</h2>
         <Carousel slides={slides}/>

@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
         <h2 className="section-title">Contact</h2>
         <form className="contact-form" onSubmit={sendEmail}>

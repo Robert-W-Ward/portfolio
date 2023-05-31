@@ -6,26 +6,23 @@ const Experience = () => {
     const experiences = [
         {
             title: "Software Engineer",
-            company: "Company Inc.",
-            description: "Lorem ipsum dore",
-            dates: "yadda - yadda"
+            company: "NHC Distributors",
+            description: "Full-stack development with ASP.net. Desktop App development with .NET framework, WPF, and C#",
+            dates: "06/2022 - present",
+            link: "https://nhcdist.com/"
         },
         {
-            title: "Full-stack developer",
+            title: "Data Automation Intern",
             company: "II-VI Inc.",
-            description: "Ullamco culpa consectetur dolore consequat dolore laboris nostrud eiusmod duis irure ut qui consectetur ea.",
-            dates: "yadda - yadda"
+            description: "Data processing automation and analysis using Numpy, Pandas, MatplotLib, and OCR libraries for wafer identification and recycling",
+            dates: "05/2021 - 08/2023",
+            link: "https://ii-vi.com/",
+            fallbacklink: "https://www.coherent.com/"
         },
-        {
-            title:"Cloud Engineer",
-            company:"Microsoft",
-            description:"Irure duis ipsum eu nulla ex enim aute et nulla irure fugiat commodo ex ex.",
-            dates: "1980 - 2013"
-        }
     ];
 
     return (
-        <section className="experiences-section">
+        <section className="experiences-section" id="experience">
             <div className="experiences-container">
                 <h2 className="section-title">Work Experience</h2>
                 <div className="experiences-row">

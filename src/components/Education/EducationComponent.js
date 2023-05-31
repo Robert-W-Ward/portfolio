@@ -3,7 +3,7 @@ import './EducationComponentStyles.scss'
 
 const Education = () =>{
     return (
-        <section className="education-section">
+        <section className="education-section" id="education">
             <div className="education-container">
                 <h2 className="section-title">Education</h2>
                 <p>

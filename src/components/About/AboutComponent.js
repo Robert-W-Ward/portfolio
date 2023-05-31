@@ -3,14 +3,11 @@ import "./AboutComponentStyles.scss";
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-container">
         <h2 className="section-title">About Me</h2>
         <p className="section-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
-          sapien vel tellus gravida finibus. Fusce sagittis, lorem vitae
-          volutpat dignissim, mauris nunc accumsan lorem, sit amet efficitur
-          diam mi in turpis.
+        Passionate and skilled professional. Thrives in dynamic environments. Adaptable problem-solver. Committed to high-quality results.
         </p>
       </div>
     </section>

@@ -1,18 +1,20 @@
 .experiences-section {
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
   padding: 8rem 0;
 }
 
 .experiences-container {
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
+  
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .experiences-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: -10px; 
-  text-align: center;
+  justify-content: center;
+  gap: 40px;
 }
