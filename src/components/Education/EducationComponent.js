@@ -1,16 +1,52 @@
-import React from "react";
-import './EducationComponentStyles.scss'
+import React from 'react';
+import './EducationComponentStyles.scss';
+import MSstateLogo from '../../assets/images/msstate_logo.svg';
+import ECCCLogo from '../../assets/images/eccc_logo.png';
 
-const Education = () =>{
-    return (
-        <section className="education-section" id="education">
-            <div className="education-container">
-                <h2 className="section-title">Education</h2>
-                <p>
-                    Duis ea esse aute enim ex veniam ut tempor dolor nostrud ut. Tempor ea aliqua qui sunt mollit id do Lorem ipsum et et incididunt deserunt. Dolor anim aute occaecat ipsum cupidatat magna adipisicing elit dolor nulla do. Commodo elit eiusmod magna et commodo exercitation Lorem. Anim nostrud pariatur ut ipsum dolor id esse aute excepteur velit. Reprehenderit ullamco irure pariatur et aliqua aliqua excepteur excepteur.
-                </p>
-            </div>
-        </section>
-    )
-}
-export default Education
+const Education = () => {
+  const educationData = [
+    {
+        institution: 'Mississippi State University',
+        degree: 'Master\'s of Science in Computer Science',
+        graduationDate: 'May 2024',
+        website: 'https://www.msstate.edu/',
+        logo: MSstateLogo,
+      },
+    {
+      institution: 'Mississippi State University',
+      degree: 'Bachelor of Science in Computer Science',
+      graduationDate: 'May 2022',
+      website: 'https://www.msstate.edu/',
+      logo: MSstateLogo,
+    },
+    {
+      institution: 'East Central Community College',
+      degree: 'Associate\'s Of Arts',
+      graduationDate: 'May 2020',
+      website: 'https://www.eccc.edu/',
+      logo: ECCCLogo,
+    },
+  ];
+
+  return (
+    <section className="education">
+      <h2>Education</h2>
+      {educationData.map((educationItem, index) => (
+        <div className="education-item" key={index}>
+          <a
+            href={educationItem.website}
+            className="institution-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={educationItem.logo} alt={educationItem.institution} className="institution-logo" />
+          </a>
+          <p className="education-details">{educationItem.degree}</p>
+          <p className="education-details">Graduated in {educationItem.graduationDate}</p>
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default Education;
