@@ -18,10 +18,10 @@ const ProjectCard = ({ title, description, imageUrl }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="card-top">
+      <div className="project-card-top">
         <img src={imageUrl} alt={title} />
       </div>
-      <div className="card-bottom">
+      <div className="project-card-bottom">
         <h3>{title}</h3>
         {isHovered && <p>{description}</p>}
       </div>
