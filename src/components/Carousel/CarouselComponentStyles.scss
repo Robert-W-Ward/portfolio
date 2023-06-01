@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
+  z-index: 2; /* Add a higher z-index value */
 }
 
 .carousel-button:hover {
@@ -28,15 +29,18 @@
 .carousel-button.next {
   right: 10px;
 }
-.carousel-container {
-  display: block;
-  align-items: center;
-}
 
 .carousel-button.previous {
   left: 10px;
 }
-.arrow-icon.previous{
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* Add position relative */
+}
+
+.arrow-icon.previous {
   transform: scaleX(-1);
 }
 
@@ -46,5 +50,5 @@
   align-items: center;
   width: 100%;
   text-align: center;
+  position: relative; /* Add position relative */
 }
-

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import {ReactComponent as ArrowIcon} from '../../assets/images/arrow.svg'
+import { ReactComponent as ArrowIcon } from '../../assets/images/arrow.svg';
 import { useTransition, animated } from 'react-spring';
-import "./CarouselComponentStyles.scss";
+import './CarouselComponentStyles.scss';
 
 const Carousel = ({ slides }) => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -18,27 +18,23 @@ const Carousel = ({ slides }) => {
   };
 
   const transitions = useTransition(activeSlide, {
-    from: { opacity: 1, transform: `translate3d(${direction * 100}%,0,0)` },
-    enter: { opacity: 1, transform: 'translate3d(0px,0,0)' },
-    to: { opacity: 1, transform: `translate3d(${direction * -100}%,0,0)` },
+    from: { opacity: 1, transform: `translate3d(${direction * 100}%, 0, 0)` },
+    enter: { opacity: 1, transform: 'translate3d(0px, 0, 0)' },
+    to: { opacity: 1, transform: `translate3d(${direction * -100}%, 0, 0)` },
   });
-  
 
   return (
     <div className="carousel-container">
       <button className="carousel-button previous" onClick={goToPreviousSlide}>
-       <ArrowIcon className='arrow-icon previous'/>
+        <ArrowIcon className="arrow-icon previous" />
       </button>
-      {transitions((styles, item) => 
-        <animated.div 
-          style={styles} 
-          className="carousel-slide"
-        >
+      {transitions((styles, item) => (
+        <animated.div style={styles} className="carousel-slide">
           {slides[item]}
         </animated.div>
-      )}
+      ))}
       <button className="carousel-button next" onClick={goToNextSlide}>
-      <ArrowIcon className='arrow-icon next'/>
+        <ArrowIcon className="arrow-icon next" />
       </button>
     </div>
   );
