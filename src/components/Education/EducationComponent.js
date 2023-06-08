@@ -6,12 +6,12 @@ import ECCCLogo from '../../assets/images/eccc_logo.png';
 const Education = () => {
   const educationData = [
     {
-        institution: 'Mississippi State University',
-        degree: 'Master\'s of Science in Computer Science',
-        graduationDate: 'May 2024',
-        website: 'https://www.msstate.edu/',
-        logo: MSstateLogo,
-      },
+      institution: 'Mississippi State University',
+      degree: 'Master\'s of Science in Computer Science',
+      graduationDate: 'May 2024',
+      website: 'https://www.msstate.edu/',
+      logo: MSstateLogo,
+    },
     {
       institution: 'Mississippi State University',
       degree: 'Bachelor of Science in Computer Science',
@@ -29,7 +29,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="education">
+    <section className="education" id="education">
       <h2>Education</h2>
       {educationData.map((educationItem, index) => (
         <div className="education-item" key={index}>
