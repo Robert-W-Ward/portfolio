@@ -10,7 +10,7 @@ import Carousel from "../../components/Carousel/CarouselComponent.js";
 const Project = () => {
   const slides = [
     <ProjectCard
-      title="This very Website!"
+      title="This very website!"
       description="This website was made me to showcase the projects I'm most proud of. It is a single page web app written using React.js"
       imageUrl={PortfolioLogoImage}
     />,
