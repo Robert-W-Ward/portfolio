@@ -29,11 +29,11 @@ Welcome to my Software Engineer Portfolio! This single-page React application sh
 
 ## Credits
 
-This portfolio is inspired by various design patterns and examples found online, and it is developed and maintained by [Your Name]. Feel free to use this portfolio as a starting point for building your own or modify it to suit your needs.
+This portfolio is inspired by various design patterns and examples found online, and it is developed and maintained by myself. Feel free to use this portfolio as a starting point for building your own or modify it to suit your needs.
 
 ## Feedback and Contributions
 
-I welcome any feedback, suggestions, or bug reports regarding this portfolio. If you have any ideas for improvement or would like to contribute, please feel free to [open an issue](https://github.com/your-username/software-engineer-portfolio/issues) or submit a pull request.
+I welcome any feedback, suggestions, or bug reports regarding this portfolio. If you have any ideas for improvement or would like to contribute, please feel free to [open an issue](https://github.com/Robert-W-Ward/portfolio/issues) or submit a pull request.
 
 ## License
 
