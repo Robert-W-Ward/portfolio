@@ -14,11 +14,13 @@ const Project = () => {
       title="This very website!"
       description="This website was made me to showcase the projects I'm most proud of. It is a single page web app written using React.js"
       imageUrl={PortfolioLogoImage}
+      url={"https://github.com/Robert-W-Ward/portfolio"}
     />,
     <ProjectCard
       title="Iterative Deepening A*"
       description="Implementation and Analysis of the Iterative Deepening A* pathfinding algorithm for my AI class"
       imageUrl={PuzzleImage}
+      url={"https://github.com/Robert-W-Ward/IDAStarAnalysis"}
     />,
     // <ProjectCard
     //   title="Project 3"
