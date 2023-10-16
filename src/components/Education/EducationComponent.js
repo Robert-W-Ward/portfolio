@@ -42,7 +42,7 @@ const Education = () => {
             <img src={educationItem.logo} alt={educationItem.institution} className="institution-logo" />
           </a>
           <p className="education-details">{educationItem.degree}</p>
-          <p className="education-details">Graduated or will Graduate in {educationItem.graduationDate}</p>
+          <p className="education-details">Graduated:{educationItem.graduationDate}</p>
         </div>
       ))}
     </section>

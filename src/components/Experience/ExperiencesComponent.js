@@ -5,9 +5,16 @@ import './ExperiencesComponentStyles.scss'
 const Experience = () => {
     const experiences = [
         {
+            title:"Software Engineer",
+            company:"Aluminum Dynamics",
+            description:"Full-stack web development\n with ASP.NET, Porting from PowerBuilder",
+            link:"https://stld.steeldynamics.com/"
+        },
+
+        {
             title: "Software Engineer",
             company: "NHC Distributors",
-            description: "Full-stack development with ASP.net. Desktop App development with .NET framework, WPF, and C#",
+            description: "Full-stack development with ASP.NET. Desktop App development with .NET framework, WPF, and C#",
             dates: "06/2022 - present",
             link: "https://nhcdist.com/"
         },
