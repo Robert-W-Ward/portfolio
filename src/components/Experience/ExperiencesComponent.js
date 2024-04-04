@@ -15,7 +15,7 @@ const Experience = () => {
             title: "Software Engineer",
             company: "NHC Distributors",
             description: "Full-stack development with ASP.NET. Desktop App development with .NET framework, WPF, and C#",
-            dates: "06/2022 - present",
+            dates: "06/2022 - 09/2023",
             link: "https://nhcdist.com/"
         },
         {
